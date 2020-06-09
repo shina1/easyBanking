@@ -8,8 +8,8 @@ body{
     font-size:18px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 300, 400;
-    max-width: 1440px;
-    
+    /* max-width: 1440px; */
+    overflow-x: hidden;
 }
 main{
     margin: 0 auto;
@@ -85,7 +85,7 @@ font-weight: 400;
 font-family: 'Public Sans', sans-serif;
 color:hsl(233, 26%, 24%);
 margin-top:90px;
-width:300px;
+width:43vmin;
 }
 .next-gen p{
     color:hsl(233, 8%, 62%);
@@ -94,16 +94,18 @@ width:300px;
     font-weight: 400;
     margin-top:20px;
     text-align: left;
-    width: 400px;
+    width:75vmin;  /* will take 75% of the device small dimension */
 }
 .next-gen .btn{
     margin-top: 30px;
 }
 .img-rg img{
-width:600px;
-height:650px;
-margin-left:100px;
-margin-top: -30px;
+/* width:600px;
+height:650px; */
+  max-width: 100%;
+  height: auto;
+  margin-left:100px;
+  margin-top: -30px;
 }
 .img-rg{
     width:50%;
@@ -120,7 +122,8 @@ margin-top: -30px;
     background-color:hsl(220, 16%, 96%);
     padding:50px;
     margin-top:40px;
-    /* z-index: -1; */
+    position: relative;
+    z-index: -100;
 }
 .unboard .text{
     height:150px;
@@ -164,7 +167,9 @@ margin-top: -30px;
 /* +++++++++++++++++++++++++++== styling for article section ==++++++++++++++++++++++++++++++++++++++++++++++++ */
 .article{
     background-color:hsl(0, 0%, 98%);
-    padding:20px;
+    /* padding:20px; */
+    width: 100%;
+    overflow-x: hidden;
 }
 .article h2{
     /* margin:50px 0 0 70px; */
@@ -177,8 +182,8 @@ margin-top: -30px;
 .article .cardsA{
     display:flex;
     justify-content: space-between;
-    margin:50px 0 70px 70px;
-    width: 1050px;
+    margin:50px 0 70px 30px;
+    width: auto;
 }
 
 .article .crdA{
@@ -208,8 +213,8 @@ font-size:15px;
 color:hsl(233, 8%, 62%);
 }
 .article .crdA img{
-    width:230px;
-    height: 170px;
+    max-width: 100%;
+    height: auto;
     border-radius:10px 10px 0 0;
 }
 /* +++++++++++++++++++++++++++== styling for footer section ==++++++++++++++++++++++++++++++++++++++++++++++++ */
