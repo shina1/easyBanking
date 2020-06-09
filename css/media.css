@@ -1,0 +1,71 @@
+/* for tablet view */
+
+@media all and (max-width: 1000px){
+    main{
+        border: 2px solid red;
+        max-width:100%;
+        overflow: none;
+    }
+    header{
+        width:100%;
+    }
+    header .btn-inv{
+        width:100px;
+        font-size:10px;
+    }
+    .banner{
+        height:70vh;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .next-gen{
+        border: 2px solid red;
+        width: 25%;
+        height: 70vh;
+    }
+    .next-gen p{
+        width: 100%;
+    }
+    .img-rg{
+        width:60%;
+        margin-top:-50px;
+        z-index: -1;
+        background-position: right 120% top 250%;
+        background-size:800px;    
+    }
+    .cards{
+        border: 2px solid blue;
+        display:flex;
+        justify-content: space-around;
+        height: auto;
+    }
+    .cards .crd{
+        border:2px solid red;
+        height: auto;
+    }
+    .article{
+      /* width: 100%;  */
+      border: 2px solid green;
+    }
+    .article .cardsA{
+        border: 2px solid blue;
+        /* width: 100%; */
+    }
+    
+    .article .crdA{
+        border: 2px solid red;
+        /* width:50%; */
+        /* display: none; */
+    }
+
+}
+/* styling for mobile view */
+
+/* @media all and (max-width: 670px){
+    
+    main{
+        max-width: 100%;
+        border: 2px solid black;
+        padding: 20px;
+    }  
+} */
