@@ -14,4 +14,55 @@
 main {
   border: 2px solid red;
   max-width: 450px;
+  margin: 0 auto;
+  /* padding: 2px; */
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: auto;
+  background: hsl(0, 0%, 100%);
+  /* width: 450px; */
+  /* margin: 0 auto; */
+}
+header .hd-main {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+header .hd-main .logo {
+  margin: 20px;
+}
+.hd-main .btn-inv {
+  display: none;
+}
+.burger {
+  /* border: 2px solid yellow; */
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 15px -170px 0 0;
+}
+.burger .line {
+  margin: 6px 0 0 6px;
+}
+.burger .line1 {
+  border-top: 0.3px solid black;
+  width: 20px;
+}
+.burger .line2 {
+  border-top: 0.3px solid black;
+  width: 20px;
+}
+.burger .line3 {
+  border-top: 0.3px solid black;
+  width: 20px;
+}
+
+.hd-main .nav {
+  display: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
